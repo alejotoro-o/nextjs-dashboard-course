@@ -30,6 +30,11 @@ to:
 
     const sql = postgres(process.env.POSTGRES_URL!); // Using docker postgres
 
+## Authentication credentials
+
+**Email:** user@nextmail.com
+**Password:** 123456
+
 ## Concepts and best practices
 
 ### Automatic code-splitting and prefetching
