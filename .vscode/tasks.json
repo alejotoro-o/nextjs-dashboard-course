@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Local Postgres DB Start",
+            "type": "shell",
+            "command": "docker run -d --name postgres -e POSTGRES_PASSWORD=1234 -v nextjs-dashboard-postgres:/var/lib/postgresql/data -p 5432:5432 postgres",
+            "problemMatcher": [],
+        }
+    ]
+}

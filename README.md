@@ -10,9 +10,11 @@ The course uses Vercel Postgres powered by Neon, I wanted to keep things locally
 
 To run the container just run the following command:
 
-    docker run -d --name postgres -e POSTGRES_PASSWORD=1234 -v nextjs-dashboard-postgres:/var/lib/postgresql/dataesql/data -p 5432:5432 postgres
+    docker run -d --name postgres -e POSTGRES_PASSWORD=1234 -v nextjs-dashboard-postgres:/var/lib/postgresql/data -p 5432:5432 postgres
 
 This will run the container using a volume named "nextjs-dashboard-postgres" and mapping port 5432 to the host port 5432.
+
+This repository has a VS Code task that allows to run the container. Press **ctrl+shift+p** then search run tasks and run the task named **Local Postgres DB Start**.
 
 Then you can set the environment variables in your .env file as:
 
